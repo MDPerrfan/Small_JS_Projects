@@ -1,0 +1,105 @@
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+.winningmsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.msg {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newbtn {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: medium;
+    font-weight: 700;
+    background: linear-gradient(112.2deg, rgb(7, 7, 6) -1.1%, rgb(29, 221, 0) 100.7%);
+    color: rgb(242, 247, 251);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.heading {
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(233, 233, 249);
+    font-weight: 800;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    justify-content: center;
+    margin-top: 70px;
+    gap: .5rem;
+}
+
+.box {
+    height: 180px;
+    border-radius: 20px;
+    font-size: 5rem;
+    color: rgb(212, 9, 9);
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #051937;
+}
+
+#reset {
+    padding: 10px;
+    margin-top: 40px;
+    width: 100px;
+    border-radius: 6px;
+    font-size: medium;
+    font-weight: 700;
+    background: linear-gradient(112.2deg, rgb(0, 204, 255) -1.1%, rgb(0, 221, 61) 100.7%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* Media query for mobile screens */
+
+@media only screen and (max-width: 600px) {
+    .winningmsg {
+        height: auto;
+        /* Remove fixed height for smaller screens */
+    }
+    .msg {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+    .game {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .box {
+        height: 130px;
+        font-size: 3rem;
+    }
+}

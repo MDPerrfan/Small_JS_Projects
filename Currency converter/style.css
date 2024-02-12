@@ -60,7 +60,7 @@ form input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8rem;
+    max-width: 8rem;
     background-color: bisque;
     border: 1px solid gray;
     border-radius: .5rem;
@@ -71,7 +71,7 @@ form input {
 }
 
 select {
-    width: 5em;
+    max-width: 4em;
     font-size: 1rem;
 }
 

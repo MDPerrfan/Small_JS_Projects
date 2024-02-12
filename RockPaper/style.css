@@ -1,108 +1,112 @@
-        body {
-            box-sizing: border-box;
-            text-align: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            background-color: #4a7ba6;
-            color: rgb(254, 252, 252);
-            min-height: 100vh;
-        }
-        
-        .heading {
-            font-size: 4vmin;
-            letter-spacing: -4px;
-            text-shadow: -1px -1px 3px #0c0c0c, 2px 2px 4px #1b1b1b;
-            font-weight: 700;
-        }
-        
-        .heading span {
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        
-        .options-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 6rem;
-            transition: transform 0.5s ease;
-        }
-        
-        img:hover {
-            transform: rotate(-90deg);
-            transition: transform 0.5s ease;
-            /* Adjust the duration and easing function as needed */
-        }
-        
-        img:not(:hover) {
-            transform: rotate(0deg);
-            transition: transform 0.5s ease;
-            /* Add the same transition properties here */
-        }
-        
+    body {
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #4a7ba6;
+        color: rgb(254, 252, 252);
+        min-height: 100vh;
+    }
+    
+    .heading {
+        font-size: 4vmin;
+        letter-spacing: -4px;
+        text-shadow: -1px -1px 3px #0c0c0c, 2px 2px 4px #1b1b1b;
+        font-weight: 700;
+    }
+    
+    .heading span {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .options {
+        box-shadow: none;
+    }
+    
+    .options-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        transition: transform 0.5s ease;
+    }
+    
+    img:hover {
+        transform: rotate(-90deg);
+        transition: transform 0.5s ease;
+        /* Adjust the duration and easing function as needed */
+    }
+    
+    img:not(:hover) {
+        transform: rotate(0deg);
+        transition: transform 0.5s ease;
+        /* Add the same transition properties here */
+    }
+    
+    img {
+        width: 10rem;
+        height: 10rem;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 50%;
+    }
+    
+    .score-board {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        font-size: 4vmin;
+    }
+    
+    .mssg-container {
+        margin-top: 8rem;
+    }
+    
+    #mssg {
+        background-color: black;
+        padding: 15px;
+        font-size: 2rem;
+        display: inline;
+        border-radius: 10px;
+        color: whitesmoke;
+    }
+    
+    footer a {
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: rgb(7, 7, 7);
+        font-style: italic;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    footer a:hover {
+        background-color: rgb(214, 94, 118);
+    }
+    
+    @media only screen and (max-width: 768px) {
         img {
-            width: 10rem;
-            height: 10rem;
-            overflow: hidden;
-            cursor: pointer;
-            margin: 15px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            border-radius: 50%;
+            width: 7rem;
+            height: 7rem;
         }
-        
         .score-board {
-            display: flex;
-            justify-content: center;
-            gap: 4rem;
-            font-size: 4vmin;
+            margin-top: 6rem;
+            font-size: 5vmin;
         }
-        
-        .mssg-container {
-            margin-top: 8rem;
-        }
-        
         #mssg {
-            background-color: black;
-            padding: 15px;
-            font-size: 2rem;
-            display: inline;
-            border-radius: 10px;
-            color: whitesmoke;
+            font-size: 1.2rem;
+            padding: 8px;
         }
-        
         footer a {
-            text-decoration: none;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            color: rgb(7, 7, 7);
-            font-style: italic;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            border-radius: 30px;
-            padding: 10px;
+            font-size: 0.8rem;
+            padding: 6px;
         }
-        
-        footer a:hover {
-            background-color: rgb(214, 94, 118);
-        }
-        
-        @media only screen and (max-width: 768px) {
-            img {
-                width: 7rem;
-                height: 7rem;
-            }
-            .score-board {
-                margin-top: 6rem;
-                font-size: 5vmin;
-            }
-            #mssg {
-                font-size: 1.2rem;
-                padding: 8px;
-            }
-            footer a {
-                font-size: 0.8rem;
-                padding: 6px;
-            }
-        }
+    }

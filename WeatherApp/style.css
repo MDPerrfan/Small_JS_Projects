@@ -9,14 +9,6 @@
         background-color: #222!important;
     }
     
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 80vh;
-    }
-    
     .card {
         width: 90%;
         max-width: 470px;
@@ -25,6 +17,7 @@
         border-radius: 20px;
         text-align: center;
         color: aliceblue;
+        margin: 100px auto;
     }
     
     .search {
@@ -47,6 +40,14 @@
         cursor: pointer;
         border-radius: 50%;
         padding: 10px;
+    }
+    
+    .error {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
     }
     
     .weather-icon {
@@ -73,4 +74,8 @@
     .detail-icon {
         width: 50%;
         margin: 10px;
+    }
+    
+    .weather {
+        display: none;
     }

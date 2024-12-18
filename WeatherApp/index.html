@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input class="search-box" type="search" placeholder="enter city name" spellcheck="false">
+                <i class="fa fa-search search-icon"></i>
+            </div>
+            <div class="weather">
+                <img src="./assests/clouds.png" alt="" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./assests/humidity.png" alt="" class="detail-icon">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./assests/wind.png" alt="" class="detail-icon">
+                        <div>
+                            <p class="wind">15 KM/H</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = 'bf46a1345b8ab51d1a0813809f5b675d';
+        const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=dhaka';
+        async function checkWeather(params) {
+            const response = await fetch(apiUrl)
+        }
+    </script>
+</body>
+
+</html>
